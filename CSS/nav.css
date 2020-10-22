@@ -5,6 +5,10 @@
     color:white;
 }
 
+#nav-container{  /*for other pages except homepage*/
+    padding: 20px 50px 10px;
+}
+
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -84,6 +88,7 @@ nav ul li a{
     left:0;
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 
 .menu.responsive-nav ul{
