@@ -73,7 +73,7 @@ a{
 #about{
     
     background-color: white;
-    padding: 20px 100px 40px 100px;
+    padding: 20px 100px 40px;   
     text-align: center;
     
     
@@ -169,7 +169,7 @@ a{
 #skills{
      
     background-color: rgb(248, 210, 245);
-    padding: 20px 100px 40px 100px;
+    padding: 20px 100px 40px;
     color:black;
     text-align: center;
 
@@ -206,8 +206,9 @@ a{
     text-decoration: none;
 }
 
-.social-media ul li a img{
-    height:20px;
+.social-media .fa{
+    font-size: 20px;
+    color: white;
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -227,6 +228,9 @@ a{
     }
     .social-media{
         margin-top: 10px;
+    }
+    .card{
+        margin:20px;
     }
 
 }

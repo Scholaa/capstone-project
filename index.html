@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
    
-   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" typetype="text/css" href="CSS/nav.css">
     <link rel="stylesheet" typetype="text/css" href="CSS/landing-page.css">
     <link rel="stylesheet" typetype="text/css" href="CSS/footer.css">
@@ -14,16 +14,18 @@
   </head>
   <body>
       <section id="banner">
-        <nav id="navigation">
+        <nav id="navigation" class="nav">
             <div class="logo">
                 NOWO
             </div>
-            <div class="menu">
-                <ul>
+            <div class="menu" id="menu">
+                <ul> 
+                    <li class="burger-icon" onclick="dropNav()"><i class="fa fa-bars"></i></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contacts</a></li>
                     <li class="join-btn"><a href="#">Join</a></li>
+                    
                 </ul>
             </div>
   
@@ -270,9 +272,9 @@
         </div>
         <div class="social-media">
           <ul>
-            <li><a href="#"><img src="images/fb.png" alt=""></a></li>
-            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
-            <li><a href="#"><img src="images/gmail.png" alt=""></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
       </section>
@@ -280,5 +282,8 @@
       <section id="footer">
         <p>Copyright &copy; 2020 All rights reserved, Nowo Design</p>
       </section>
+
+
+      <script src="JS/nav.js"></script>
   </body>
 </html>
