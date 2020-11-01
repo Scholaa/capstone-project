@@ -23,7 +23,7 @@ body{
     align-items: center;
     width: 100%;
     position: absolute;
-    top:20%;
+    top:15%;
     
     
 }
@@ -33,11 +33,12 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    border-radius: 30px;
+    border-radius: 15px;
     flex-direction: column;
     background-color: #fff;
-    padding: 30px 30px 40px;
+    padding: 20px 80px;
     margin:20px;
+    width: 40%;
     
 }
 
@@ -50,24 +51,33 @@ input.title{
     height: 30px;
     width: 100%;
     background: rgb(241, 200, 229);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
     outline: none;
+    border: none;
 }
 
 .form-controls textarea{
     background: rgb(241, 200, 229);
     width:100%;
     outline:none;
-    border-radius: 10px;
+    border-radius: 5px;
+    height: 150px;
+    border: none;
 }
 .form-title{
     display: block;
-    font-size: 28px;
-    margin: 30px auto;
+    font-size: 24px;
+    margin: 10px auto 25px ;
     font-weight: 900;
     text-transform: uppercase;
 }
+
+textarea, .title{
+    padding:5px;
+    font-size: 18px;
+}
+
 
 .form-controls label{
     display: inline-block;
@@ -77,10 +87,10 @@ input.title{
 }
 
 .create-button{
-    padding: 10px 40px;
+    padding: 7px 15px;
     background-color: #852270;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
     border-radius: 30px;
     display: inline-block;
     margin-top: 8px;
@@ -122,16 +132,26 @@ input.title{
     .menu ul li{
         display: none;
     }
+
+    #form-container{
+        position: absolute !important;
+        top: 15%;
+    }
+    .form{
+        padding: 40px;
+        width: 70%;
+    }
 }
 /*---------------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width:600px) {
-   
+    #form-container{
+        position: relative !important;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    } 
 }
 
-@media only screen and (max-width:350px) {
-    
-}
 
 
 
@@ -147,3 +167,6 @@ input.title{
     }
 }
 
+@media only screen and (max-width:350px) {
+    
+}
