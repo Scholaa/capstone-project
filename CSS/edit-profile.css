@@ -1,0 +1,194 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+body{
+    background-color: #852270;
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+.user-avatar img{
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: -6px;
+    
+}
+
+/*------------------------for all pages except landing page--------------------------------*/
+#nav-container{
+    width:100%;
+    background-color: #852270;
+    padding:initial;
+}
+#navigation{
+    padding: 20px 20px 10px; /* it has to be customised in mediaqueeries*/
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+#main-section{
+    padding: 80px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container{
+    background-color: white;
+    padding:20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+}
+
+.form-title{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;    
+}
+.right, .middle, .left{
+    display: flex;
+    flex-basis: 32%;
+    flex-direction: column;
+    margin: 20px;
+}
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profiel-pic img{
+    width: 100%;
+}
+
+input[type="text"], textarea{
+    width: 100%;
+    margin-top: 5px;
+    background-color: #fcd7f4;
+    padding: 2px 12px;
+    border: none;
+    border-radius: 5px;
+}
+input[type="text"]{
+    height: 24px;
+}
+textarea{
+    height: 100px;
+}
+input[type="file"]{
+    margin-top: 15px;
+    display: inline-block;
+}
+
+label{
+    
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.control{
+    margin: 7px 0px;
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.btns button{
+    padding: 5px 15px;
+    background-color: #852270;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+    border-radius: 7px;
+    border:none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 798px){
+    .menu.responsive-nav .user-avatar{
+        display:none;
+    }
+    .menu ul li{
+        display: none;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+    #main-section{
+        padding: 20px 50px;
+    }
+    .profile-container{
+        width:75%;
+        padding: 30px 40px;
+        position: relative !important;
+        
+    }
+
+    .left{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .control.pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input[type="text"]{
+        height: 40px;
+    }
+    textarea{
+        height: 200px;
+    }
+
+    .btns button{
+        font-size: 18px;
+        padding: 5px 12px;
+    }
+   
+}
+/*---------------------------------------------------------------------------------------------*/
+@media only screen and (max-width:600px) {
+    .profile-container{
+        width:95%; 
+    }
+}
+@media only screen and (max-width:465px) {
+   
+   
+}
+@media only screen and (max-width:350px) {
+    .right, .middle, .left{
+        margin: 0;
+    }
+     
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" typetype="text/css" href="../CSS/nav.css">
+    <link rel="stylesheet" typetype="text/css" href="../CSS/edit-profile.css">
+    <link rel="stylesheet" typetype="text/css" href="../CSS/footer.css">
+    <title>Blogs</title>
+  </head>
+  <body>
+   <section id="nav-container">
+        <nav id="navigation" class="nav">
+            <div class="logo">
+                NOWO
+            </div>
+            <div class="menu" id="menu">
+                <ul> 
+                    <li class="burger-icon" onclick="dropNav()"><i class="fa fa-bars"></i></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="edit-profile.html">Profile</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="signIn.html">Logout</a></li>
+                    <li><a href="createBlog.html">Create blog</a></li>
+                    <li><a href="edit-blog.html">Edit blog</a></li>
+                    
+                                        
+                </ul>
+                <div class="user-avatar"><img src="../images/javascript.png" onclick="dropNav()"></div>
+            </div>
+
+        </nav>
+   </section>
+
+   <section id="main-section">
+       <div class="profile-container">
+           <div class="form-title">
+               Edit Profile
+           </div>
+           <form action="#" class="form">
+               <div class="left">
+                   <div class="profile-pic">
+                       <img src="../images/login3.jpg" alt="">
+                   </div>
+                   <div class="control pic">
+                    <label for="profile-picture">Profile picture</label><br>
+                    <input type="file" name="profile-picture" id="profile-picture"> <br>
+                </div>
+               </div>
+
+               <div class="middle">
+                   <div class="control">
+                       <label for="username">Username</label><br>
+                       <input type="text" name="username" id="username"> <br>
+                   </div>
+
+                   <div class="control">
+                        <label for="phone">Mobile Phone</label><br>
+                        <input type="text" name="phone" id="phone"> <br>
+                   </div>
+
+                   <div class="control">
+                    <label for="bio">Bio</label><br>
+                    <textarea name="bio" id="bio"></textarea><br>
+               </div>
+
+               </div>
+
+               <div class="right">
+                    <div class="control">
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="email"> <br>
+                    </div>
+
+                    <div class="control">
+                        <label for="address">Address</label><br>
+                        <input type="text" name="address" id="address"> <br>
+                   </div>
+                   <div class="btns">
+                       <button>Cancel</button>
+                       <button>Save</button>
+                   </div>
+               </div>
+           </form>
+       </div>
+   </section>
+
+
+   <script src="../JS/nav.js"></script>
+
+   
+</body>
+</html>
